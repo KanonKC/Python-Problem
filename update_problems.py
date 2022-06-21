@@ -13,14 +13,19 @@ for i in result:
     all_files = os.listdir(f'./{i}')
     py_files = pyfileFiler(all_files)
     link = [i.strip() for i in open(f'./{i}/problem.txt').readlines()]
+    difficulty = [int(i.strip()) for i in open(f'./{i}/difficulty.txt').readlines()]
 
     week_prob = {}
     for j in range(len(link)):
+        res_diff = 0
+        if j < len(difficulty):
+            res_diff = difficulty[j]
         prob_name = py_files[j].split('-')[1][:-3]
         week_prob[prob_name] = {
             "number": j+1,
             "name": prob_name,
             "link": link[j],
+            "difficulty": res_diff
         }
     
     all_problems.append({
@@ -29,5 +34,6 @@ for i in result:
         "problems": week_prob
     })
 
-requests.post('http://localhost:8000/mint-tutor/problems',json=all_problems)
+# requests.post('http://192.168.0.5:8000/mint-tutor/problems',json=all_problems)
+requests.put('http://localhost:8000/mint-tutor/problems',json=all_problems)
 print("***UPDATE COMPLETED!***")

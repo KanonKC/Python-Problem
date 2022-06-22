@@ -34,6 +34,6 @@ for i in result:
         "problems": week_prob
     })
 
-# requests.post('http://192.168.0.5:8000/mint-tutor/problems',json=all_problems)
-requests.put('http://localhost:8000/mint-tutor/problems',json=all_problems)
+requests.post('http://192.168.0.5:8000/mint-tutor/problems',json=all_problems)
+# requests.put('http://localhost:8000/mint-tutor/problems',json=all_problems)
 print("***UPDATE COMPLETED!***")

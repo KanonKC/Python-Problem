@@ -1,9 +1,6 @@
 import os
 import requests
 
-def pyfileFiler(files):
-    return [i for i in files if i[-3:] == ".py"]
-
 result = os.listdir('./')
 
 all_problems = []
@@ -11,7 +8,7 @@ all_problems = []
 for i in result:
     if i.split()[0] != "Week": continue
     all_files = os.listdir(f'./{i}')
-    py_files = pyfileFiler(all_files)
+    py_files = [i for i in all_files if i[-3:] == ".py"]
     link = [i.strip() for i in open(f'./{i}/problem.txt').readlines()]
     difficulty = [int(i.strip()) for i in open(f'./{i}/difficulty.txt').readlines()]
 

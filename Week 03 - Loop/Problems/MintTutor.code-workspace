@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\JERIX-Backend"
+		},
+		{
+			"path": "..\\..\\..\\Mint Tutor Bot"
+		},
+		{
+			"path": "..\\.."
+		}
+	],
+	"settings": {
+		"nuxt.isNuxtApp": false
+	}
+}

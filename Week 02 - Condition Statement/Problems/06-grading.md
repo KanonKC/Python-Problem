@@ -75,7 +75,7 @@ else:
 83.199
 ::elab:endtest
 ::elab:begintest hint="-"
-93
+51.65
 ::elab:endtest
 ::elab:begintest hint="-"
 61.078
@@ -84,19 +84,19 @@ else:
 77.889
 ::elab:endtest
 ::elab:begintest hint="-"
-99.731
+40.145
 ::elab:endtest
 ::elab:begintest hint="-"
-71.172
+58.32
 ::elab:endtest
 ::elab:begintest hint="-"
-100.138
+100
 ::elab:endtest
 ::elab:begintest hint="-"
 93.381
 ::elab:endtest
 ::elab:begintest hint="-"
-63.094
+67.094
 ::elab:endtest
 ::elab:begintest hint="-"
 70.158

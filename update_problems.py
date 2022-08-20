@@ -27,7 +27,7 @@ for i in result:
     
     all_problems.append({
         "week_no": int(i.split()[1]),
-        "title": i[10:],
+        "title": i[13:],
         "problems": week_prob
     })
 

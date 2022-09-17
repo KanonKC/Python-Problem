@@ -6,7 +6,7 @@ result = os.listdir('./')
 all_problems = []
 
 for i in result:
-    if i.split()[0] != "Week": continue
+    if i.split()[0] != "Chapter": continue
     all_files = os.listdir(f'./{i}')
     py_files = [i for i in all_files if i[-3:] == ".py"]
     link = [i.strip() for i in open(f'./{i}/problem.txt').readlines()]
@@ -27,7 +27,7 @@ for i in result:
     
     all_problems.append({
         "week_no": int(i.split()[1]),
-        "title": i[10:],
+        "title": i[13:],
         "problems": week_prob
     })
 

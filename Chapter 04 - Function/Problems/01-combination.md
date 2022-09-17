@@ -70,26 +70,26 @@ print(fac(n)//(fac(r)*fac(n-r)))
 0
 ::elab:endtest
 ::elab:begintest hint="-"
-559
-162
+54
+46
 ::elab:endtest
 ::elab:begintest hint="-"
-488
-49
+100
+46
 ::elab:endtest
 ::elab:begintest hint="-"
-992
-885
+100
+8
 ::elab:endtest
 ::elab:begintest hint="-"
-806
-16
+65
+13
 ::elab:endtest
 ::elab:begintest hint="-"
-878
-731
+64
+30
 ::elab:endtest
 ::elab:begintest hint="-"
-940
-464
+76
+2
 ::elab:endtest

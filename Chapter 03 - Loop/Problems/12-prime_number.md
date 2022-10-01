@@ -27,7 +27,7 @@ n: _474959_
 ## Example 3
 <pre class="output">
 n: _501729_
-544146 is not a Prime Number
+501729 is not a Prime Number
 </pre>
 
 ::elab:begincode blank=True

@@ -1,6 +1,6 @@
 # Password Validation
-<!-- TODO: Testcase -->
-ในการตั้งรหัสผ่าน มักจะมีเงื่อนไขต่างๆขึ้นมาให้เราทำตาม เพื่อให้รหัสผ่านของเรามีความแข็งแรง และไม่ให้ใครมาไขรหัสผ่านเราได้  
+
+ในการตั้งรหัสผ่านมักจะมีเงื่อนไขต่างๆขึ้นมาให้เราทำตาม เพื่อให้รหัสผ่านของเรามีความแข็งแรง และไม่ให้ใครมาไขรหัสผ่านเราได้  
 
 โดยปกติแล้วการตั้งรหัสผ่านมักจะมีเงื่อนไขดังนี้:
 
@@ -83,4 +83,20 @@ if length and upper and lower and number and special:
 ::elab:endcode
 
 ::elab:begintest hint="-"
+1q2w3e4r
+::elab:endtest
+::elab:begintest hint="-"
+AC#@
+::elab:endtest
+::elab:begintest hint="-"
+aksjk*&*287187JskL
+::elab:endtest
+::elab:begintest hint="-"
+skldklskdlkslkdlksldkl
+::elab:endtest
+::elab:begintest hint="-"
+a
+::elab:endtest
+::elab:begintest hint="-"
+1
 ::elab:endtest

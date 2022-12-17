@@ -1,6 +1,6 @@
 # Matrix Reader
 
-ไฟล์ matrix.txt มีข้อมูลดังนี้
+ไฟล์ matrix1.txt มีข้อมูลดังนี้
 
 <pre class="output">
 1 2 3 4
@@ -29,7 +29,7 @@
 
 ## Example 1
 <pre class="output">
-File name: _matrix.txt_
+File name: _matrix1.txt_
   0    -10    1     4
   4     2     0     5
  -1    -3    10     8
@@ -77,5 +77,11 @@ with open(filename) as f:
 ::elab:endcode
 
 ::elab:begintest hint="-"
-matrix.txt
+matrix1.txt
+::elab:endtest
+::elab:begintest hint="-"
+matrix2.txt
+::elab:endtest
+::elab:begintest hint="-"
+matrix3.txt
 ::elab:endtest

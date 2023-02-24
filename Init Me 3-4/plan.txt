@@ -1,0 +1,29 @@
+Loop
+
+- Sum
+- Max
+- Fac
+- Rect
+
+- Tria
+- Prime
+
+- Ribbon
+- Combination
+- Twin Prime
+
+
+
+List
+
+- IPv4
+- bin to dec
+- Palin
+- Wrap
+
+- Text Trans
+- Password Valid
+- Rounding
+- Align Right
+
+File

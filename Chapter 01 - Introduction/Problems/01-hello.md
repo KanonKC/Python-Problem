@@ -18,5 +18,6 @@ Hello World!
 print("Hello World!")
 ::elab:endcode
 
-::elab:begintest hint="-"
+::elab:begintest hint="-".
+1
 ::elab:endtest

@@ -83,8 +83,8 @@ try:
     body = parser(data)
     response = requests.post('http://localhost:8000/api/accounts/4/problems',json=body)
     print(f"{response} {file}")
-except:
-    print(f"<Error []> {file}")
+except Exception as err:
+    print(f"<Error []> {file}\n{err}")
 
 print("Done")
 

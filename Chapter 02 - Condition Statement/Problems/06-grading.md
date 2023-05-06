@@ -13,14 +13,14 @@ table,tr,td{
 
 <table>
 <tr><td>คะแนนรวม (x)</td><td>เกรด</td></tr>
-<tr><td>\[80 \le x \lt 100 \]</td><td>A</td></tr>
-<tr><td>\[75 \le x \lt 80  \]</td><td>B+</td></tr>
-<tr><td>\[70 \le x \lt 75  \]</td><td>B</td></tr>
-<tr><td>\[65 \le x \lt 70  \]</td><td>C+</td></tr>
-<tr><td>\[60 \le x \lt 65  \]</td><td>C</td></tr>
-<tr><td>\[55 \le x \lt 60  \]</td><td>D+</td></tr>
-<tr><td>\[50 \le x \lt 55  \]</td><td>D</td></tr>
-<tr><td>\[0  \le x \lt 50  \]</td><td>F</td></tr>
+<tr><td>80 ≤ x ≤ 100 </td><td>A</td></tr>
+<tr><td>75 ≤ x < 80  </td><td>B+</td></tr>
+<tr><td>70 ≤ x < 75  </td><td>B</td></tr>
+<tr><td>65 ≤ x < 70  </td><td>C+</td></tr>
+<tr><td>60 ≤ x < 65  </td><td>C</td></tr>
+<tr><td>55 ≤ x < 60  </td><td>D+</td></tr>
+<tr><td>50 ≤ x < 55  </td><td>D</td></tr>
+<tr><td>0  ≤ x < 50  </td><td>F</td></tr>
 </table>  
 
 ให้เขียนโปรแกรมที่รับคะแนนทั้งหมด และแสดงออกมาว่าจะได้เกรดอะไร

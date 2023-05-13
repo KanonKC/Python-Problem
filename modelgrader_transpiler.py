@@ -50,58 +50,39 @@ def parser(text):
     return inputData
 
 
-# i = 0
-# for file in os.listdir(f"{directory}/Problems"):
-#     # print(file,i)
-#     # if i < 12:
-#     #     i += 1
-#     #     continue
-
-#     try:
-#         f = open(f"{directory}/Problems/{file}",'r',encoding='utf8')
-#         # f = open(f"{directory}/Problems/02-quadratic formula.md",'r',encoding='utf8')
-#         data = f.read()
-#         body = parser(data)
-#         response = requests.post('http://localhost:8000/api/accounts/4/problems',json=body)
-#         print(f"{response} {file}")
-#     except:
-#         print(f"<Error []> {file}")
-    
-#     i += 1
-#     # break
-
 chapter = int(input("Chapter: "))
-file_no = int(input("File No: "))
+file_set = [int(i) for i in input("File No: ").split()]
 
-directory = f"./{getDir()}"
+for file_no in file_set:
+    directory = f"./{getDir()}"
 
-try:
-    file = os.listdir(f"{directory}/Problems")[file_no-1]
-    f = open(f"{directory}/Problems/{file}",'r',encoding='utf8')
-    # f = open(f"{directory}/Problems/02-quadratic formula.md",'r',encoding='utf8')
-    data = f.read()
-    body = parser(data)
-    response = requests.post('http://localhost:8000/api/accounts/4/problems',json=body)
-    print(f"{response} {file}")
-except Exception as err:
-    print(f"<Error []> {file}\n{err}")
+    try:
+        file = os.listdir(f"{directory}/Problems")[file_no-1]
+        print(f"Uploading {file} Response...",end="")
+
+        f = open(f"{directory}/Problems/{file}",'r',encoding='utf8')
+        # f = open(f"{directory}/Problems/02-quadratic formula.md",'r',encoding='utf8')
+        data = f.read()
+        body = parser(data)
+        response = requests.post('http://localhost:8000/api/accounts/4/problems',json=body)
+        print(f"{response}")
+    except Exception as err:
+        print(f"<Error []>\n{err}")
 
 print("Done")
 
-"""
-ISSUE
+# ISSUE
 
-<Response [406]> 07-reminder_theorem.md
-<Response [406]> 08-duo_eater.md
+# <Response [406]> 07-reminder_theorem.md
+# <Response [406]> 08-duo_eater.md
 
-<Response [406]> 09-qualification.md
-<Response [406]> 10-buzzloteli.md
-<Response [406]> 11-simple_calculator.md
+# <Response [406]> 09-qualification.md
+# <Response [406]> 10-buzzloteli.md
+# <Response [406]> 11-simple_calculator.md
 
-12-...
-<Error []> 13-basic_forloop.md
+# 12-...
+# <Error []> 13-basic_forloop.md
 
-<Response [406]> 04-parallel.md
+# <Response [406]> 04-parallel.md
 
-<Error []> 05-list_generation.md
-"""
+# <Error []> 05-list_generation.md

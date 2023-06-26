@@ -79,7 +79,7 @@ while True:
 
     if x[1] == "+":
         printSet(union(set1,set2))
-    elif x[1] == "x":
+    elif x[1] == "*":
         printSet(intersection(set1,set2))
     elif x[1] == "-":
         printSet(minus(set1,set2))

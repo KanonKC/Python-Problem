@@ -7,7 +7,7 @@ def isPrime(n):
     return True
 
 # print("Generating Sample...")
-# CUSTOMIZE = [i for i in range(1,10000) if isPrime(i)]
+CUSTOMIZE = [i for i in range(1,10000) if isPrime(i)]
 
 count = int(input("How many testcase: "))
 input_type = [i for i in input("Type of input(int/float/all/str/custom) for each line: ").split()]

@@ -11,6 +11,7 @@ def createSet(label):
 def printSet(set):
     for item in set:
         print(item, end=" ")
+    print()
 
 def intersection(set1,set2):
     result = []

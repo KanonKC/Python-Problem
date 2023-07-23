@@ -5,7 +5,7 @@ def printMatrix(matrix):
         print()
 
 def createMatrix():
-    row = int(input("Enter the number of rows: "))
+    row = 3
     matrix = []
 
     for _ in range(row):
@@ -35,7 +35,3 @@ for i in range(len(matrix)):
         cofacterMatrix[i][j] = det2D(minor(matrix, i, j)) * (-1)**(i+j)
 
 printMatrix(cofacterMatrix)
-
-# 7 -5 -8
-# -3 -7 -2
-# 0 -4 -8

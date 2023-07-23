@@ -5,12 +5,11 @@ def printMatrix(matrix):
         print()
 
 def createMatrix():
-    row = int(input("Enter the number of rows: "))
+    row = 3
     matrix = []
 
     for _ in range(row):
         matrix.append([int(j) for j in input().split()])
-
     return matrix
 
 def minor(matrix, row, col):

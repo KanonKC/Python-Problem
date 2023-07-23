@@ -1,5 +1,5 @@
 def createMatrix():
-    row = int(input("Enter the number of rows: "))
+    row = 2
     matrix = []
 
     for _ in range(row):

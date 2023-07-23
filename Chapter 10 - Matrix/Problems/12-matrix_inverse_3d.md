@@ -1,3 +1,32 @@
+# Inverse 3D-Matrix
+
+**Inverse Matrix** คือ Matrix ที่เมื่อคูณกับ Matrix ตัวเดิม จะได้ Matrix ที่มีขนาดเป็น [Identity Matrix](https://en.wikipedia.org/wiki/Identity_matrix)
+
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/41e7cbed13b2f1ebfd2280887ba113427c7378ff">
+
+โดย Inverse ของ Matrix ใด ๆ นั้น สามารถหาได้จากการนำ Adjoint ของ Matrix นั้น มาหารด้วย Determinant ของ Matrix นั้น (โดยที่ Determinant จะต้องมีค่า ≠ 0 ไม่งั้นก็จะถือว่า Matrix นั้นไม่มี Inverse)
+
+<img src="https://www.onlinemath4all.com/images/inverseofamatrix.png">
+
+เขียนโปรแกรมที่รับ Matrix 3x3 เข้ามา จากนั้นก็หา Inverse Matrix สำหรับ Matrix นั้น
+
+<u>ข้อมูลนำเข้า</u>  
+มีทั้งหมด 3 บรรทัด แทน Matrix `A` ขนาด 3x3
+
+<u>ข้อมูลส่งออก</u>  
+แสดง Inverse ของ Matrix `A`
+
+## Example 1
+<pre class="output">
+_1 2 3_
+_0 2 4_
+_0 0 5_
+ 1.0    -1.0   0.2
+ 0.0    0.5    -0.4
+ 0.0    0.0    0.2
+</pre>
+
+::elab:begincode blank=True
 def printMatrix(matrix):
     for i in range(len(matrix)):
         for j in range(len(matrix[i])):
@@ -63,11 +92,22 @@ def inverseMatrix(matrix):
 
 matrix = createMatrix()
 printMatrix(inverseMatrix(matrix))
+::elab:endcode
 
-# 7 -5 -8
-# -3 -7 -2
-# 0 -4 -8
+::elab:begintest hint="-"
+1 2 3
+0 2 4
+0 0 5
+::elab:endtest
 
-# 1 2 3
-# 0 2 4
-# 0 0 5
+::elab:begintest hint="-"
+7 -5 -8
+-3 -7 -2
+0 -4 -8
+::elab:endtest
+
+::elab:begintest hint="-"
+2 9 7
+4 5 6
+1 5 22
+::elab:endtest

@@ -19,9 +19,9 @@ matrixB = createMatrix()
 matrixC = []
 for i in range(len(matrixA)):
     matrixC.append([])
-    for j in range(len(matrixA[0])):
+    for j in range(len(matrixB[0])):
         result = 0
-        for k in range(len(matrixB[0])):
+        for k in range(len(matrixA[0])):
             result += matrixA[i][k] * matrixB[k][j]
         matrixC[i].append(result)
 

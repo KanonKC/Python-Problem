@@ -6,6 +6,8 @@ def getDir():
     for dir in os.listdir('./'):
         if f"Chapter 0{chapter}" in dir:
             return dir
+        if f"Chapter {chapter}" in dir:
+            return dir 
 
 
 def parser(text):

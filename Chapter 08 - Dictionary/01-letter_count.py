@@ -2,7 +2,7 @@ text = input("Enter text: ").lower()
 collection = {}
 
 for letter in text:
-    if letter not in "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM":
+    if letter not in "qwertyuiopasdfghjklzxcvbnm":
         continue
     if letter in collection:
         collection[letter] += 1

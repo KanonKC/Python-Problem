@@ -46,7 +46,7 @@ printList(container)
 ::elab:endtest
 
 ::elab:begintest hint="-"
--1 -95 54 -51 -54 654 -654 - 56545 -954 212 -654 5 -68 4954 -654
+-1 -95 54 -51 -54 654 -654 -56545 -954 212 -654 5 -68 4954 -654
 ::elab:endtest
 
 ::elab:begintest hint="-"

@@ -66,7 +66,7 @@ for file_no in file_set:
         # f = open(f"{directory}/Problems/02-quadratic formula.md",'r',encoding='utf8')
         data = f.read()
         body = parser(data)
-        response = requests.post('http://localhost:8000/api/accounts/4/problems',json=body)
+        response = requests.post('http://localhost:8004/api/accounts/4/problems',json=body)
         print(f"{response}")
     except Exception as err:
         print(f"<Error []>\n{err}")

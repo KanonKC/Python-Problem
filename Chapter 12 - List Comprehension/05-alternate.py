@@ -1,0 +1,1 @@
+print([((i*2)-1)*((-1)**i) for i in range(int(input("N: ")))])

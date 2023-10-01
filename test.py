@@ -1,16 +1,10 @@
-def printMatrix(matrix):
-    for i in range(len(matrix)):
-        for j in range(len(matrix[i])):
-            print(f'{matrix[i][j]:^6}', end = ' ')
-        print()
+from random import randint, random
 
-matrix = [
-    [1,2],
-    [3,4],
-    [5,6]
-]
+pool = ['C','F','R','K']
 
-for i in range(len(matrix)):
-    for j in range(len(matrix[i])):
-        print(matrix[i][j]*5,end=" ")
+for i in range(10):
+    print('::elab:begintest hint="-"')
+    print(f"{((random()*200) - 100):.4f} {pool[randint(0,3)]}")
+    print(pool[randint(0,3)])
+    print('::elab:endtest')
     print()

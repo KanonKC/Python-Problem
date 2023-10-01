@@ -51,6 +51,15 @@ def parser(text):
 
     return inputData
 
+def displayParser(parsed):
+    print("title",parsed["title"])
+    print("description",parsed["description"])
+    print("solution",parsed["solution"])
+    print("testcases")
+    for i in parsed["testcases"]:
+        print(i)
+        print(":::")
+    print("time_limit",parsed["time_limit"])
 
 chapter = int(input("Chapter: "))
 file_set = [int(i) for i in input("File No: ").split()]
@@ -66,6 +75,9 @@ for file_no in file_set:
         # f = open(f"{directory}/Problems/02-quadratic formula.md",'r',encoding='utf8')
         data = f.read()
         body = parser(data)
+
+        displayParser(body)
+
         response = requests.post('http://localhost:8004/api/accounts/4/problems',json=body)
         print(f"{response}")
     except Exception as err:

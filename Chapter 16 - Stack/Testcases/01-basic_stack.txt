@@ -1,0 +1,40 @@
+push A
+push B
+push C
+show
+empty
+top
+show
+pop
+show
+pop
+pop
+pop
+show
+empty
+
+----------
+pop
+top
+show
+push A
+pop
+empty
+push B
+show
+empty
+push C
+show
+empty
+
+----------
+push A
+push B
+push C
+pop
+pop
+push D
+push E
+show
+
+----------

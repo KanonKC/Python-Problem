@@ -21,6 +21,10 @@ def dequeue():
     first += 1
     return rtn
 
+def empty():
+    global first,last
+    return (first == -1 and last == -1) or first > last
+
 def show():
     global first,last
     print(QUEUE[first:last+1])

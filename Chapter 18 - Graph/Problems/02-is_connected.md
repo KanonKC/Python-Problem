@@ -44,8 +44,23 @@ Node 4 and 3 are connected
 ตัวอย่างนี้เป็นกราฟที่เราได้ให้มาก่อนหน้านี้
 
 ::elab:begincode blank=True
+
+def traverse(graph,u,v,visited):
+    if visited[u]:
+        return False
+    visited[u] = 1
+    if u == v:
+        return True
+    
+    found = False
+    for i in range(len(graph[u])):
+        if graph[u][i] == 1:
+            found = found or traverse(graph,i,v,visited)
+    return found
+
 N = int(input("Enter number of nodes: "))
 E = int(input("Enter number of edges: "))
+Q = int(input("Enter number of questions: "))
 
 graph = [[0 for _ in range(N)] for _ in range(N)]
 
@@ -54,12 +69,13 @@ for _ in range(E):
     graph[u][v] = 1
     graph[v][u] = 1
 
-for i in range(len(graph)):
-    print(f"Node #{i} has neighbours: ",end="")
-    for j in range(len(graph[i])):
-        if graph[i][j] == 1:
-            print(j,end=" ")
-    print()
+for _ in range(Q):
+    [u,v] = [int(i) for i in input("Enter 2 nodes: ").split()]
+    visited = [0 for _ in range(N)]
+    if traverse(graph,u,v,visited):
+        print(f"Node {u} and {v} are connected")
+    else:
+        print(f"Node {u} and {v} are not connected")
 ::elab:endcode
 
 ::elab:begintest hint="-"

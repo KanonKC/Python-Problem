@@ -1,3 +1,67 @@
+# Connected Node
+
+ในโจทย์ข้อนี้เราจะรับกราฟ `G = (V,E)` จากนั้นจะรับคำถามเข้ามา จะให้คำถามว่าเราสามารถเดินทางจาก `u` ไป `v` เมื่อ `u` และ `v` เป็นสมาชิกของ G ได้หรือไม่
+
+<img src="https://i.ibb.co/bX6sf9L/graph-1.png">
+
+ตัวอย่างจากรูปนี้จะเห็นว่า:
+- `0, 1, 2, 3, 4` สามารถเดินทางไปมาหากันได้ ()
+- `5, 6` สามารถเดินทางไปมาหากันได้
+- เราไม่สามารถเดินทางจาก `{0, 1, 2, 3, 4}` ไป `{5, 6}` ได้ (Vice Versa)
+
+<u>ข้อมูลนำเข้า</u>  
+**บรรทัดที่ 1** รับเข้ามาเป็นจำนวนเต็ม `V` แทนจำนวน Node ทั้งหมดของกราฟนี้  
+**บรรทัดที่ 2** รับเข้ามาเป็นจำนวนเต็ม `E` แทนจำนวน Edge ทั้งหมดของกราฟนี้  
+**บรรทัดที่ 3** รับเข้ามาเป็นจำนวนเต็ม `Q` แทนจำนวนคำถามที่ต้องการถาม  
+**หลังจากนี้จำนวน `E` บรรทัด** รับเข้ามาเป็นจำนวนเต็มสองจำนวน `u` และ `v` 
+แทนว่ามี Edge ที่เชื่อมระหว่าง Node `u` และ `v`  
+**หลังจากนี้จำนวน `Q` บรรทัด** รับเข้ามาเป็นจำนวนเต็มสองจำนวน `u` และ `v` แทนคำถามว่า สามารถเดินทางจาก `u` ไป `v` ได้หรือไม่  
+
+<u>ข้อมูลส่งออก</u>  
+มีทั้งหมด `Q` บรรทัด แสดงคำตอบทุกครั้งที่มีการรับคำถามเข้ามา
+
+## Example 1
+<pre class="output">
+Enter number of nodes: _7_
+Enter number of edges: _6_
+Enter number of questions: _4_
+_0 1_
+_0 2_
+_0 4_
+_2 3_
+_2 4_
+_6 5_
+Enter 2 nodes: _0 2_
+Node 0 and 2 are connected
+Enter 2 nodes: _1 3_
+Node 1 and 3 are connected
+Enter 2 nodes: _4 5_
+Node 4 and 5 are not connected
+Enter 2 nodes: _4 3_
+Node 4 and 3 are connected
+</pre>
+
+ตัวอย่างนี้เป็นกราฟที่เราได้ให้มาก่อนหน้านี้
+
+::elab:begincode blank=True
+N = int(input("Enter number of nodes: "))
+E = int(input("Enter number of edges: "))
+
+graph = [[0 for _ in range(N)] for _ in range(N)]
+
+for _ in range(E):
+    [u,v] = [int(i) for i in input().split()]
+    graph[u][v] = 1
+    graph[v][u] = 1
+
+for i in range(len(graph)):
+    print(f"Node #{i} has neighbours: ",end="")
+    for j in range(len(graph[i])):
+        if graph[i][j] == 1:
+            print(j,end=" ")
+    print()
+::elab:endcode
+
 ::elab:begintest hint="-"
 7
 6

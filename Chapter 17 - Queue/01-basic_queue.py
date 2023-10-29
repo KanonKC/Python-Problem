@@ -21,6 +21,14 @@ def dequeue():
     first += 1
     return rtn
 
+def head():
+    global first,last
+    if first > last or first == -1:
+        return None
+
+    rtn = QUEUE[first]
+    return rtn
+
 def empty():
     global first,last
     return (first == -1 and last == -1) or first > last
@@ -30,14 +38,18 @@ def show():
     print(QUEUE[first:last+1])
 
 while True:
-    command = input("Select method [(e)nqueue/(d)equeue]: ").split()
+    command = input("Select method (enqueue/dequeue/head/empty/show): ").split()
 
     if len(command) == 0:
         break
-    elif command[0] == "e":
+    elif command[0] == "enqueue":
         enqueue(command[1])
-    elif command[0] == "d":
-        dequeue()
-    
-
-    show()
+        print(f"Enqueue -> {command[1]}")
+    elif command[0] == "dequeue":
+        print(f"Dequeue -> {dequeue()}")
+    elif command[0] == "head":
+        print(f"head -> {head()}")
+    elif command[0] == "empty":
+        print(empty())
+    elif command[0] == "show":
+        show()

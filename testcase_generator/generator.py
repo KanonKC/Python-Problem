@@ -52,7 +52,7 @@ class TestcaseGenerator:
         """
         pass
 
-    def writeTextFile(self,filename="testcase.txt",show=False) -> None:
+    def writeTextFile(self,filename="testcase.txt",show=False,delimeter="----------",seperate=False) -> None:
         """
         Write testcases to text file
         Return None
@@ -61,15 +61,26 @@ class TestcaseGenerator:
             self.customGenerator()
         else:
             self.standardGenerator()
-        with open(filename,"w") as file:
-            text = ""
-            for testcase in self.testcases:
-                text += "\n".join([str(j) for j in testcase])
-                text += "\n----------\n"
-            file.write(text)
-            print("Testcases saved to",filename)
-            if show:
-                print(text)
+        if seperate:
+            for i in range(len(self.testcases)):
+                with open(f"{filename}{i+1}","w") as file:
+                    text = ""
+                    text += "\n".join([str(j) for j in self.testcases[i]])
+                    text += f"\n{delimeter}\n"
+                    file.write(text)
+                    print("Testcases saved to",f"{filename}{i+1}")
+                    if show:
+                        print(text)
+        else:
+            with open(filename,"w") as file:
+                text = ""
+                for testcase in self.testcases:
+                    text += "\n".join([str(j) for j in testcase])
+                    text += f"\n{delimeter}\n"
+                file.write(text)
+                print("Testcases saved to",filename)
+                if show:
+                    print(text)
 
     def writeElabsheet(self,filename="testcase.txt",show=False) -> None:
         """

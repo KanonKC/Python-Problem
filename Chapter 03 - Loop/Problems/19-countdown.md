@@ -8,33 +8,8 @@
 <u>ข้อมูลส่งออก</u>  
 แสดงตัวเลขตั้งแต่ `N` จนถึง 0 โดยแสดงจำนวนละบรรทัด
 
-## Example 1
-<pre class="output">
-Countdown from: 3
-3
-2
-1
-0
-</pre>
-
-## Example 2
-<pre class="output">
-Countdown from: 10
-10
-9
-8
-7
-6
-5
-4
-3
-2
-1
-0
-</pre>
-
 ::elab:begincode blank=True
-n = int(input("Countdown from: "))
+n = int(input())
 
 for i in range(n,-1,-1):
     print(i)

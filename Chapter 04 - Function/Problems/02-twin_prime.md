@@ -10,24 +10,6 @@
 <u>ข้อมูลส่งออก</u>  
 หาคู่ Twin Prime ที่ใกล้ที่สุด และมีค่ามากกว่า n ทั้งคู่
 
-## Example 1
-<pre class="output">
-_4_
-5, 7
-</pre>
-
-## Example 2
-<pre class="output">
-_5_
-11, 13
-</pre>
-
-## Example 3
-<pre class="output">
-_200_
-227, 229
-</pre>
-
 ::elab:begincode blank=True
 def isPrime(n):
     if n == 1:

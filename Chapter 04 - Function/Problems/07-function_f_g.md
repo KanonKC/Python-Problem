@@ -20,20 +20,6 @@
 <u>ข้อมูลส่งออก</u>  
 มีบรรทัดเดียว แสดงผลลัพธ์ที่ได้จาก `f(y) * g(y,x)`
 
-## Example 1
-<pre class="output">
-x: _3_
-y: _5_
-80
-</pre>
-
-## Example 2
-<pre class="output">
-x: _0_
-y: _0_
-5
-</pre>
-
 ::elab:begincode blank=True
 def f(x):
     if x >= 5 and x <= 25:
@@ -49,8 +35,8 @@ def g(x,y):
     else:
         return 1
 
-x = int(input("x: "))
-y = int(input("y: "))
+x = int(input())
+y = int(input())
 
 print(f(y)*g(y,x))
 ::elab:endcode

@@ -21,26 +21,8 @@
 <u>ข้อมูลส่งออก</u>  
 เลขฐาน 10 ของตัวเลขฐาน 2 ที่รับเข้ามา
 
-## Example 1
-<pre class="output">
-Enter binary: __10__
-2
-</pre>
-
-## Example 1
-<pre class="output">
-Enter binary: __111__
-7
-</pre>
-
-## Example 1
-<pre class="output">
-Enter binary: __11101010111__
-1879
-</pre>
-
 ::elab:begincode blank=True
-binary = input("Enter binary: ")
+binary = input()
 
 decimal = 0
 for i in range(len(binary)):

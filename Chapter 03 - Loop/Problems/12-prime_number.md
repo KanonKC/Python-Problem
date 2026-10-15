@@ -12,28 +12,10 @@
 
 **คำใบ้:** ในข้อที่แล้วเราสามารถทดสอบง่ายๆโดยการลองหาร `2, 3, 5, 7` แต่สำหรับจำนวนเฉพาะที่มีค่าใหญ่มากขึ้นจะ*ไม่สามารถ*ใช้วิธีนี้ได้อีกต่อไป เพราะฉะนั้นเราจะต้องกลับมายึดทฤษฎีที่ว่า `"จำนวนเฉพาะคือจำนวนที่มีแค่ 1 และตัวมันเองเท่านั้นที่หารลงตัว"` (ถ้ายังคิดไม่ออกให้ลองกลับคำพูดนี้ดู)
 
-## Example 1
-<pre class="output">
-n: _2_
-2 is a Prime Number
-</pre>
-
-## Example 2
-<pre class="output">
-n: _474959_
-474959 is a Prime Number
-</pre>
-
-## Example 3
-<pre class="output">
-n: _501729_
-501729 is not a Prime Number
-</pre>
-
 ::elab:begincode blank=True
 from math import sqrt
 
-n = int(input("n: "))
+n = int(input())
 
 for i in range(2,int(sqrt(n))+1):
     if n % i == 0:

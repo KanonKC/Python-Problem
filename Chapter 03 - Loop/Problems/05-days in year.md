@@ -10,42 +10,10 @@
 <u>ข้อมูลส่งออก</u>  
 มีบรรทัดเดียว แสดงคำตอบว่าวันนั้นคือวันที่เท่าไหร่ของปีแล้ว
 
-## Example 1
-<pre class="output">
-D: _1_
-M: _1_
-Y: _2565_
-1
-</pre>
-
-## Example 2
-<pre class="output">
-D: _6_
-M: _5_
-Y: _2565_
-126
-</pre>
-
-## Example 3
-<pre class="output">
-D: _31_
-M: _12_
-Y: _2562_
-365
-</pre>
-
-## Example 4
-<pre class="output">
-D: _31_
-M: _12_
-Y: _2563_
-366
-</pre>
-
 ::elab:begincode blank=True
-d = int(input("D: "))
-m = int(input("M: "))
-y = int(input("Y: "))
+d = int(input())
+m = int(input())
+y = int(input())
 y -= 543
 total = d
 for i in range(1,m):

@@ -9,37 +9,9 @@
 <u>ข้อมูลส่งออก</u>  
 ตัวเลขทศนิยมที่ปัดค่าตามที่ต้องการแล้ว
 
-## Example 1
-<pre class="output">
-Enter value: _1.62712_
-Precision: _3_
-1.627
-</pre>
-
-## Example 2
-<pre class="output">
-Enter value: _1.62712_
-Precision: _2_
-1.63
-</pre>
-
-## Example 3
-<pre class="output">
-Enter value: _1.35_
-Precision: _1_
-1.4
-</pre>
-
-## Example 4
-<pre class="output">
-Enter value: _1.65_
-Precision: _1_
-1.6
-</pre>
-
 ::elab:begincode blank=True
-value = input("Enter value: ")
-precision = int(input("Precision: ")) + 1
+value = input()
+precision = int(input()) + 1
 
 pre_position = value.index('.') + precision
 

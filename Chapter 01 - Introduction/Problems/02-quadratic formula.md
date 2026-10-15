@@ -13,36 +13,12 @@
 <u>ข้อมูลส่งออก</u>  
 แสดงผลลัพธ์ออกมาทั้งหมด 2 คำตอบคือ x1 และ x2 โดยที่ x1 คือค่าที่มาจากการใช้สูตรที่หน้ารูทเป็นบวก และ x2 มาจากการใช้สูตรที่หน้ารูทเป็นลบ ให้ตอบเป็น**ทศนิยม 3 ตำแหน่ง**
 
-## Example 1
-<pre class="output">
-a: _1_
-b: _5_
-c: _6_
-x1 = -2.000 ,x2 = -3.000
-</pre>
-
-## Example 2
-<pre class="output">
-a: _1_
-b: _4_
-c: _4_
-x1 = -2.000 ,x2 = -2.000
-</pre>
-
-## Example 3
-<pre class="output">
-a: _1_
-b: _5.9493_
-c: _2.22_
-x1 = -0.400 ,x2 = -5.549
-</pre>
-
 ::elab:begincode blank=True
 from math import sqrt
 
-a = float(input("a: "))
-b = float(input("b: "))
-c = float(input("c: "))
+a = float(input())
+b = float(input())
+c = float(input())
 
 x1 = (-b+sqrt(b**2-(4*a*c)))/(2*a)
 x2 = (-b-sqrt(b**2-(4*a*c)))/(2*a)

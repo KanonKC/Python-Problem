@@ -10,42 +10,6 @@
 <u>ข้อมูลส่งออก</u>  
 แสดงออกเป็นรูปโบว์ที่วาดโดยใช้ตัวอักษร `"#"`
 
-## Example 1
-<pre class="output">
-_1_
-\#
-</pre>
-
-## Example 2
-<pre class="output">
-_3_
-\# #
-\###
-\# #
-</pre>
-
-## Example 3
-<pre class="output">
-_5_
-\#   #
-\## ##
-\#####
-\## ##
-\#   #
-</pre>
-
-## Example 4
-<pre class="output">
-_7_
-\#     #
-\##   ##
-\### ###
-\#######
-\### ###
-\##   ##
-\#     #
-</pre>
-
 ::elab:begincode blank=True
 n = int(input())
 

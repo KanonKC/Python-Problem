@@ -29,23 +29,9 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;\( BMI=Weight (kg)./(Height (m).)^2 \)
 
-## Example 1
-<pre class="output">
-Weight: _57_
-Height: _165_
-Your BMI is 20.9 You're in the healthy weight range.
-</pre>
-
-## Example 2
-<pre class="output">
-Weight: _92_
-Height: _175_
-Your BMI is 30.0 You're in the obese range.
-</pre>
-
 ::elab:begincode blank=True
-w = int(input('Weight: '))
-h = int(input('Height: '))
+w = int(input())
+h = int(input())
 bmi = w/(h/100)**2
 if bmi>=30:
     print(f'Your BMI is {bmi:.1f} You\'re in the obese range.')

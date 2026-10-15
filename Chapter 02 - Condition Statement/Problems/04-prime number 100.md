@@ -11,26 +11,8 @@
 **คำใบ้**  
 สำหรับจำนวนเต็มบวกที่มีค่าน้อยกว่า 100 เราสามารถเช็คจำนวนเฉพาะได้ง่ายๆ โดยการทดลองหารจำนวนเฉพาะ 2,3,5,7 จะต้องหารไม่ลงตัวเลยสักค่า
 
-## Example 1
-<pre class="output">
-N: _2_
-2 is a Prime Number
-</pre>
-
-## Example 2
-<pre class="output">
-N: _39_
-39 is not a Prime Number
-</pre>
-
-## Example 3
-<pre class="output">
-N: _97_
-97 is a Prime Number
-</pre>
-
 ::elab:begincode blank=True
-n = int(input("N: "))
+n = int(input())
 
 if n == 1 or (n % 2 == 0 or n % 3 == 0 or n % 5 == 0 or n % 7 == 0) and (n != 2 and n != 3 and n != 5 and n != 7):
     print(f"{n} is not a Prime Number")

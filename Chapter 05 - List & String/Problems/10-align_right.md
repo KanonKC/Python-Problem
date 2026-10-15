@@ -11,32 +11,7 @@
 <u>ข้อมูลส่งออก</u>  
 แสดงข้อความทั้งหมด แบบชิดขวา
 
-## Example 1
-<pre class="output">
-_Hello_
-_Welcome_
-_To_
-_Init_
-_Me_
-_↵_
-  Hello
-Welcome
-     To
-   Init
-     Me
-</pre>
 ↵ หมายถึงกด Enter ไปเลย โดยไม่ใส่อะไร
-
-## Example 2
-<pre class="output">
-_1_
-_22_
-_333_
-_↵_
-  1
- 22
-333
-</pre>
 
 ::elab:begincode blank=True
 words = []

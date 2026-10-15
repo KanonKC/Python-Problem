@@ -11,44 +11,6 @@
 <u>ข้อมูลส่งออก</u>  
 แสดงออกเป็นรูปสามเหลี่ยมหน้าจั่วที่วาดโดยใช้ตัวอักษร `#`
 
-## Example 1
-<pre class="output">
-_5_
-_right_
-\#
-\##
-\###
-\####
-\#####
-</pre>
-
-## Example 2
-<pre class="output">
-_5_
-_left_
-    #
-   ##
-  ###
- ####
-\#####
-</pre>
-
-## Example 3
-<pre class="output">
-_3_
-_left_
-  #
- ##
-\###
-</pre>
-
-## Example 4
-<pre class="output">
-_1_
-_left_
-\#
-</pre>
-
 ::elab:begincode blank=True
 n = int(input())
 side = input()

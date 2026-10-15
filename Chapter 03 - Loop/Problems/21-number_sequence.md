@@ -17,42 +17,8 @@
 <u>ข้อมูลส่งออก</u>  
 แสดงลำดับตัวเลขที่แตกต่างกันทั้งหมด 6 แบบ ตามรายละเอียดข้างต้น
 
-## Example 1
-<pre class="output">
-N: _5_
-Sequence 1  
-0 1 2 3 4 5 
-Sequence 2  
-5 4 3 2 1 0 
-Sequence 3  
-0 2 4 6 8   
-Sequence 4  
-2 3 4 5     
-Sequence 5  
-0 1 4 9 16  
-Sequence 6  
-1 -3 5 -7 9
-</pre>
-
-## Example 2
-<pre class="output">
-N: _10_
-Sequence 1
-0 1 2 3 4 5 6 7 8 9 10        
-Sequence 2
-10 9 8 7 6 5 4 3 2 1 0        
-Sequence 3
-0 2 4 6 8 10 12 14 16 18      
-Sequence 4
-5 6 7 8 9 10
-Sequence 5
-0 1 4 9 16 25 36 49 64 81     
-Sequence 6
-1 -3 5 -7 9 -11 13 -15 17 -19
-</pre>
-
 ::elab:begincode blank=True
-N = int(input("N: "))
+N = int(input())
 
 print("Sequence 1")
 for i in range(N+1):

@@ -15,27 +15,10 @@
 **ตัวอย่าง 1** เรามีตัวแปร `number = 12.651432` หากเรา `print(f"{number:.2f}")` จะแสดงผลออกมาเป็น `12.65`  
 **ตัวอย่าง 2** เรามีตัวแปร `number = 5` หากเรา `print(f"{number:.2f}")` จะแสดงผลออกมาเป็น `5.00`
 
-## Example 1
-<pre class="output">
-a: _5.0_
-b: _7_
-h: _10_
-60.00
-</pre>
-
-## Example 2
-<pre class="output">
-a: _7.65_
-b: _6.25_
-h: _10.00_
-69.50
-</pre>
-
-
 ::elab:begincode blank=True
-a = float(input("a: "))
-b = float(input("b: "))
-h = float(input("h: "))
+a = float(input())
+b = float(input())
+h = float(input())
 
 print(f"{1/2 * (a+b)*h:.2f}")
 ::elab:endcode

@@ -22,20 +22,6 @@
 <u>ข้อมูลส่งออก</u>  
 มีบรรทัดเดียว แสดงผลลัพธ์ที่ได้จาก `h(f(x),g(x,y))`
 
-## Example 1
-<pre class="output">
-x: _3_
-y: _5_
-34
-</pre>
-
-## Example 2
-<pre class="output">
-x: _0_
-y: _0_
-13
-</pre>
-
 ::elab:begincode blank=True
 def f(x):
     if x >= 5 and x <= 25:
@@ -57,8 +43,8 @@ def h(x,y):
     else:
         return g(f(x),y)
 
-x = int(input("x: "))
-y = int(input("y: "))
+x = int(input())
+y = int(input())
 
 print(h(f(x),g(x,y)))
 ::elab:endcode

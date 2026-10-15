@@ -31,24 +31,6 @@ table,tr,td{
 <u>ข้อมูลส่งออก</u>  
 แสดงเกรดที่จะได้รับ
 
-## Example 1
-<pre class="output">
-_87_
-A
-</pre>
-
-## Example 2
-<pre class="output">
-_69.95_
-C+
-</pre>
-
-## Example 3
-<pre class="output">
-_40_
-F
-</pre>
-
 ::elab:begincode blank=True
 x = float(input())
 

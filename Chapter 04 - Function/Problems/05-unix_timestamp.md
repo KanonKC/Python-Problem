@@ -20,50 +20,17 @@
 <u>ข้อมูลส่งออก</u>  
 แสดงค่า UNIX Timestamp ของเวลาดังกล่าว ในหน่วยวินาที
 
-## Example 1
-<pre class="output">
-Date: _1_
-Month: _1_
-Year: _1970_
-Hour: _0_
-Minute: _0_
-Second: _0_
-0
-</pre>
-
-## Example 2
-<pre class="output">
-Date: _1_
-Month: _1_
-Year: _1970_
-Hour: _0_
-Minute: _1_
-Second: _40_
-100
-</pre>
-
-## Example 3
-<pre class="output">
-Date: _19_
-Month: _8_
-Year: _2022_
-Hour: _20_
-Minute: _43_
-Second: _38_
-1660941818
-</pre>
-
 ::elab:begincode blank=True
 def isLeap(y):
     return (y%4 == 0 and y%100 != 0) or y%400==0
 
-d = int(input("Date: "))
-m = int(input("Month: "))
-y = int(input("Year: "))
+d = int(input())
+m = int(input())
+y = int(input())
 
-h = int(input("Hour: "))
-mn = int(input("Minute: "))
-s = int(input("Second: "))
+h = int(input())
+mn = int(input())
+s = int(input())
 
 total = d
 for i in range(1,m):

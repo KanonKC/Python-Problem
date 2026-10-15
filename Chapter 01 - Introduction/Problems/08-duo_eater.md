@@ -16,20 +16,10 @@
 **บรรทัดที่ 2** แสดงจำนวนอาหารที่เกนกินไปทั้งหมด  
 **บรรทัดที่ 3** แสดงจำนวนอาหารที่เหลือ
 
-## Example
-<pre class="output">
-Input starting food (S): _197_
-Input Paun's eating rate (P): _70_
-Input Gane's eating rate (n): _11_
-Paun eats 2 time(s)
-Gane eats 5 time(s)
-Remaining 2 for dog
-</pre>
-
 ::elab:begincode blank=True
-s=int(input("Input starting food (S): "))
-p=int(input("Input Paun's eating rate (P): "))
-n=int(input("Input Gane's eating rate (n): "))
+s=int(input())
+p=int(input())
+n=int(input())
 pe=s//p
 ge=(s-(p*pe))//n
 dog=s-(p*pe)-(ge*n)

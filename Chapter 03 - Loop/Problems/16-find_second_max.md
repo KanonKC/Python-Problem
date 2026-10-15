@@ -10,36 +10,6 @@
 <u>ข้อมูลส่งออก</u>  
 แสดงคำตอบเป็นจำนวนที่มากที่สุดเป็นอันดับที่ 2 ที่ใส่เข้ามา
 
-## Example 1
-<pre class="output">
-_1_
-_2_
-_3_
-_0_
-2
-</pre>
-
-## Example 2
-<pre class="output">
-_3_
-_7_
-_5_
-_0_
-5
-</pre>
-
-## Example 3
-<pre class="output">
-_5_
-_3_
-_6_
-_9_
-_7_
-_1_
-_0_
-7
-</pre>
-
 ::elab:begincode blank=True
 first = 0
 second = -1

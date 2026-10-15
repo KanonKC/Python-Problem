@@ -9,26 +9,8 @@
 <u>ข้อมูลส่งออก</u>  
 แสดงคำตอบเป็นผลรวมของจำนวนทั้งหมดที่ใส่เข้ามา
 
-## Example 1
-<pre class="output">
-Enter integers: _1 2 3_
-6
-</pre>
-
-## Example 2
-<pre class="output">
-Enter integers: _5_
-5
-</pre>
-
-## Example 3
-<pre class="output">
-Enter integers: _1 -2 _ 
--1
-</pre>
-
 ::elab:begincode blank=True
-numbers = input("Enter integers: ").split()
+numbers = input().split()
 numbers = [int(i) for i in numbers]
 
 print(sum(numbers))

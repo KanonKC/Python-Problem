@@ -16,29 +16,6 @@
 * <span style="color:red;"> `findSlope(x1,y1,x2,y2)` </span> สำหรับรับค่า x1,y1,x2,y2 จากนั้น**คืนค่าความชันของเส้นตรงเส้นที่ 1**
 * <span style="color:red;"> `isParallel(m1,m2)` </span> สำหรับรับค่าความชันของเส้นตรงทั้ง 2 เส้น จากนั้น**แสดงผลว่า Parallel** หากเส้นตรงทั้ง 2 ขนานกัน หรือ**แสดงผลว่า Not parallel** หากเส้นตรงทั้ง 2 ไม่ขนานกัน
 
-Example 1
----------
-<pre class="output">
-Input x1: _1_
-Input y1: _2_
-Input x2: _3_
-Input y2: _4_
-Input m: _1_
-Parallel
-</pre>
-
-Example 2
----------
-<pre class="output">
-Input x1: _2_
-Input y1: _0_
-Input x2: _3_
-Input y2: _5_
-Input m: _2_
-Not parallel
-</pre>
-
-
 ::elab:begincode blank=True
 
 def findSlope(x1,y1,x2,y2):
@@ -50,11 +27,11 @@ def isParallel(m1,m2):
     else:
         print('Not parallel')
 
-x1 = int(input("Input x1: "))
-y1 = int(input("Input y1: "))
-x2 = int(input("Input x2: "))
-y2 = int(input("Input y2: "))
-m2 = float(input("Input m: "))
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+m2 = float(input())
 
 m1 = findSlope(x1,y1,x2,y2)
 isParallel(m1,m2)

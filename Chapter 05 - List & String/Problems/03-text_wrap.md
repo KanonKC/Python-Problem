@@ -9,38 +9,9 @@
 <u>ข้อมูลส่งออก</u>  
 ข้อความ s ที่ถูกแบ่งบรรทัดตามจำนวน n
 
-## Example 1
-<pre class="output">
-Input text: _ABCDEFGHIJKLIMNOQRSTUVWXYZ_
-N: _4_
-ABCD
-EFGH
-IJKL
-IMNO
-QRST
-UVWX
-YZ
-</pre>
-
-## Example 2
-<pre class="output">
-Input text: _ABCDEFGHIJKLIMNOQRSTUVWXYZ_
-N: _10_
-ABCDEFGHIJ
-KLIMNOQRST
-UVWXYZ
-</pre>
-
-## Example 3
-<pre class="output">
-Input text: _ABCDEFGHIJKLIMNOQRSTUVWXYZ_
-N: _26_
-ABCDEFGHIJKLIMNOQRSTUVWXYZ
-</pre>
-
 ::elab:begincode blank=True
-s = input("Input text: ")
-n = int(input("N: "))
+s = input()
+n = int(input())
 
 for i in range(len(s)):
     if i % n == 0 and i != 0:

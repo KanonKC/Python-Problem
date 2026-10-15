@@ -27,37 +27,9 @@ Quadrant หรือจตุภาค เป็นที่สิ่งเอ�
 <u>ข้อมูลส่งออก</u>  
 แสดงคำตอบว่าพิกัดที่ใส่มาอยู่ Quadrant ไหนหรืออยู่บนแกนใด โดยคำตอบที่จะแสดงออกมาจะมีทั้งหมด 9 แบบตามตัวอักษรตัวหนาด้านบน (Quadrant 1, Quadrant 2, Quadrant 3, Quadrant 4, Positive Y-Axis, Negative Y-Axis, Negative X-Axis, Positive X-Axis, Origin)
 
-## Example 1
-<pre class="output">
-x: _2_
-y: _-3_
-Quadrant 4
-</pre>
-
-## Example 2
-<pre class="output">
-x: _-1_
-y: _-1_
-Quadrant 3
-</pre>
-
-## Example 3
-<pre class="output">
-x: _0_
-y: _-1_
-Negative Y-Axis
-</pre>
-
-## Example 4
-<pre class="output">
-x: _0_
-y: _0_
-Origin
-</pre>
-
 ::elab:begincode blank=True
-x = float(input("x: "))
-y = float(input("y: "))
+x = float(input())
+y = float(input())
 
 if x == 0 and y == 0:
     print("Origin")

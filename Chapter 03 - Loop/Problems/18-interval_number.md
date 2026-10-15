@@ -8,30 +8,9 @@
 <u>ข้อมูลส่งออก</u>  
 แสดงจำนวนเต็มทั้งหมด ที่อยู่ระหว่าง `N1` และ `N2` รวมถึง 2 จำนวนนี้ด้วย
 
-## Example 1
-<pre class="output">
-Start: _3_
-End: _8_
-3 4 5 6 7 8
-</pre>
-
-## Example 2
-<pre class="output">
-Start: _-5_
-End: _5_
--5 -4 -3 -2 -1 0 1 2 3 4 5
-</pre>
-
-## Example 3
-<pre class="output">
-Start: _17_
-End: _17_
-17
-</pre>
-
 ::elab:begincode blank=True
-startNumber = int(input("Start: "))
-endNumber = int(input("End: "))
+startNumber = int(input())
+endNumber = int(input())
 
 for i in range(startNumber,endNumber+1):
     print(i,end=" ")

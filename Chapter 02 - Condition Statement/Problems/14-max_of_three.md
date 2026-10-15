@@ -8,22 +8,6 @@
 <u>ข้อมูลส่งออก</u>  
 จำนวนที่มีค่ามากที่สุด
 
-## Example 1
-<pre class="output">
-_1_
-_2_
-_3_
-3
-</pre>
-
-## Example 2
-<pre class="output">
-_-1_
-_0_
-_-999_
-0
-</pre>
-
 ::elab:begincode blank=True
 a = int(input())
 b = int(input())

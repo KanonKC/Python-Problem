@@ -10,26 +10,8 @@
 <u>ข้อมูลส่งออก</u>  
 แสดงผลของของ Factorial ของค่า n
 
-## Example 1
-<pre class="output">
-n: _0_
-1
-</pre>
-
-## Example 2
-<pre class="output">
-n: _5_
-120
-</pre>
-
-## Example 3
-<pre class="output">
-n: _10_
-3628800
-</pre>
-
 ::elab:begincode blank=True
-n = int(input("n: "))
+n = int(input())
 
 res = 1
 for i in range(1,n+1):

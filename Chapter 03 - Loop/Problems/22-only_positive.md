@@ -8,31 +8,6 @@
 <u>ข้อมูลส่งออก</u>  
 มีบรรทัดเดียว แสดงจำนวนครั้งที่รับจำนวนเต็มบวกเข้ามา
 
-## Example 1
-<pre class="output">
-_1_
-_2_
-_-3_
-_4_
-0
-Found 3 positive integer(s)
-</pre>
-
-## Example 2
-<pre class="output">
-_-1_
-_-2_
-_-3_
-0
-Found 0 positive integer(s)
-</pre>
-
-## Example 3
-<pre class="output">
-_0_
-Found 0 positive integer(s)
-</pre>
-
 ::elab:begincode blank=True
 count = 0
 

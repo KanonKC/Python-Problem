@@ -16,21 +16,8 @@
 <u>ข้อมูลส่งออก</u>  
 แสดงราคาทั้งหมดที่ต้องจ่ายค่าเช่า แสดงออกเป็นทศนิยม 2 ตำแหน่ง
 
-## Example 1
-<pre class="output">
-Total minute(s): _390_
-Total price is 490.00 baht.
-</pre>
-
-## Example 2
-<pre class="output">
-Total minute(s): _195_
-Total price is 270.00 baht.
-</pre>
-
-
 ::elab:begincode blank=True
-min = int(input("Total minute(s): "))
+min = int(input())
 
 hour = min // 60
 minl = min % 60

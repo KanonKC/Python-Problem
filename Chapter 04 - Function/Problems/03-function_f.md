@@ -12,18 +12,6 @@
 <u>ข้อมูลส่งออก</u>  
 มีบรรทัดเดียว แสดงผลลัพธ์ที่ได้จาก `f(x) + f(2x)`
 
-## Example 1
-<pre class="output">
-x: _4_
-34
-</pre>
-
-## Example 2
-<pre class="output">
-x: _5_
-55
-</pre>
-
 ::elab:begincode blank=True
 def f(x):
     if x >= 5 and x <= 25:
@@ -31,7 +19,7 @@ def f(x):
     else:
         return 5
 
-x = int(input("x: "))
+x = int(input())
 print(f(x) + f(2*x))
 ::elab:endcode
 

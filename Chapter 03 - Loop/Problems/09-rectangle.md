@@ -10,32 +10,6 @@
 <u>ข้อมูลส่งออก</u>  
 แสดงออกเป็นรูปสี่เหลี่ยมผืนผ้าที่วาดโดยใช้ตัวอักษร `#`
 
-## Example 1
-<pre class="output">
-_5_
-_3_
-\#####
-\#####
-\#####
-</pre>
-
-## Example 1
-<pre class="output">
-_10_
-_1_
-\##########
-</pre>
-
-## Example 1
-<pre class="output">
-_3_
-_3_
-\###
-\###
-\###
-</pre>
-
-
 ::elab:begincode blank=True
 l = int(input())
 h = int(input())

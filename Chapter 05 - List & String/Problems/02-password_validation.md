@@ -19,37 +19,8 @@
 <u>ข้อมูลส่งออก</u>  
 แสดงข้อความที่บอกว่ารหัสผ่านขาดเงื่อนอะไร หรือครบเงื่อนไขแล้ว
 
-## Example 1
-<pre class="output">
-Enter a password: _1q2w3e4r_
-The password must contain one or more uppercase characters
-The password must contain one or more special characters
-</pre>
-
-## Example 2
-<pre class="output">
-Enter a password: _!Q@W#E$R_
-The password must contain one or more lowercase characters
-The password must contain one or more numeric values
-</pre>
-
-## Example 3
-<pre class="output">
-Enter a password: _@_
-The password length must be greater than or equal to 8
-The password must contain one or more uppercase characters
-The password must contain one or more lowercase characters
-The password must contain one or more numeric values
-</pre>
-
-## Example 4
-<pre class="output">
-Enter a password: _ask29BS&^n8a^S8b_
-Your password is strong!
-</pre>
-
 ::elab:begincode blank=True
-password = input("Enter a password: ")
+password = input()
 
 length = len(password) >= 8
 upper = False

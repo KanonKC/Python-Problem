@@ -14,30 +14,9 @@ Remainder = เศษจากการหาร
 มีบรรทัดเดียว แสดงทั้งผลลัพธ์ และผลหารให้เหมือนกับตัวอย่างข้างล่าง
 
 
-## Example 1
-<pre class="output">
-Dividend: _359_
-Divisor: _6_
-Quotient = 59, Remainder = 5
-</pre>
-
 Dividend = ตัวตั้ง, Divisor = ตัวหาร  
 
-## Example 2
-<pre class="output">
-Dividend: _100_
-Divisor: _10_
-Quotient = 10, Remainder = 0
-</pre>
-
 100 หารด้วย 10 ลงตัว จึงไม่มีเศษเหลือ
-
-## Example 3
-<pre class="output">
-Dividend: _2_
-Divisor: _7_
-Quotient = 0, Remainder = 2
-</pre>
 
 เนื่องจาก 2 มีค่าน้อยกว่า 7 เลยหารไม่ได้ และกลายเป็นเศษไป
 
@@ -47,8 +26,8 @@ Quotient = 0, Remainder = 2
 3\) ข้อความจากข้อที่สอง **มีเคาะ Spacebar ก่อนตัวเลข**  
 
 ::elab:begincode blank=True
-a = int(input("Dividend: "))
-b = int(input("Divisor: "))
+a = int(input())
+b = int(input())
 
 quotient = a // b
 remainder = a % b

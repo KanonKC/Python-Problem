@@ -10,20 +10,8 @@
 <u>ข้อมูลส่งออก</u>  
 แสดงเศษที่เหลือจากการหารด้วยค่า p
 
-## Example 1
-<pre class="output">
-Input p: _-1_
-Fraction = 0
-</pre>
-
-## Example 2
-<pre class="output">
-Input p: _0_
-Fraction = 10
-</pre>
-
 ::elab:begincode blank=True
-x=int(input("Input p: "))
+x=int(input())
 print("Fraction =",2*(x**4)-5*(x**3)-24*(x**2)-(7*x)+10)
 ::elab:endcode
 

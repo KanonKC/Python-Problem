@@ -8,32 +8,6 @@
 <u>ข้อมูลส่งออก</u>  
 แสดงคำตอบเป็นจำนวนที่มากที่สุดที่ใส่เข้ามา
 
-## Example 1
-<pre class="output">
-_2_
-_6_
-_7_
-_8_
-_1_
-_0_
-8
-</pre>
-
-## Example 2
-<pre class="output">
-_5_
-_5_
-_5_
-_0_
-5
-</pre>
-
-## Example 3
-<pre class="output">
-_0_
-0
-</pre>
-
 ::elab:begincode blank=True
 max_number = 0
 while True:

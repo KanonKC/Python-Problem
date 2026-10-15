@@ -8,26 +8,8 @@
 <u>ข้อมูลส่งออก</u>  
 แสดงคำตอบเป็นผลรวมของจำนวนทั้งหมดที่ใส่เข้ามา โดยไม่นำจำนวนทศนิยมมารวม
 
-## Example 1
-<pre class="output">
-Enter integers: _1 2 3_
-6
-</pre>
-
-## Example 2
-<pre class="output">
-Enter integers: _1 0.23 0.239 2 0.30 3 0.99 0.1_
-6
-</pre>
-
-## Example 3
-<pre class="output">
-Enter integers: _5.0_
-0
-</pre>
-
 ::elab:begincode blank=True
-numbers = input("Enter integers: ").split()
+numbers = input().split()
 numbers = [int(i) for i in numbers if '.' not in i]
 
 print(sum(numbers))

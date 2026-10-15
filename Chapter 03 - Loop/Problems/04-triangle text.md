@@ -9,29 +9,9 @@
 <u>ข้อมูลส่งออก</u>  
 แสดงข้อความออกมาโดยมีจำนวนบรรทัดเท่ากับความสูง และในแต่ละชั้นจะมีอักขระว่าง(Spacebar) เพิ่มขึ้นที่ละ 1
 
-## Example 1
-<pre class="output">
-Text: _AABBCC_
-Height: _3_
-AABBCC
- AABBCC
-  AABBCC
-</pre>
-
-## Example 2
-<pre class="output">
-Text: _Hello World_
-Height: _5_
-Hello World
- Hello World
-  Hello World
-   Hello World
-    Hello World
-</pre>
-
 ::elab:begincode blank=True
-text = input("Text: ")
-h = int(input("Height: "))
+text = input()
+h = int(input())
 
 for i in range(h):
     print(f"{' '*i}{text}")

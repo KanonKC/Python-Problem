@@ -10,24 +10,6 @@
 <u>ข้อมูลส่งออก</u>  
 มีบรรทัดเดียว แสดงผลรวมของทุกจำนวนที่มีค่าน้อยกว่า **n** และมี 3 หรือ 5 เป็นตัวประกอบ
 
-## Example 1
-<pre class="output">
-_20_
-78
-</pre>
-
-## Example 2
-<pre class="output">
-_25_
-143
-</pre>
-
-## Example 3
-<pre class="output">
-_3_
-0
-</pre>
-
 ::elab:begincode blank=True
 n = int(input())
 res = 0

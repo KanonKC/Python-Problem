@@ -14,20 +14,8 @@
 <u>ข้อมูลส่งออก</u>  
 จำนวนค่าเช่าทั้งหมด ที่ต้องจ่าย
 
-## Example 1
-<pre class="output">
-How long have Buzz played ?: _390_
-Total price is 4410 baht.
-</pre>
-
-## Example 2
-<pre class="output">
-How long have Buzz played ?: _195_
-Total price is 2430 baht.
-</pre>
-
 ::elab:begincode blank=True
-time = int(input("How long have Buzz played ?: "))
+time = int(input())
 hour = time//60
 min = time%60
 if min > 20:

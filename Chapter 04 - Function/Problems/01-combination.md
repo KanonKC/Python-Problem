@@ -17,27 +17,6 @@
 <u>ข้อมูลส่งออก</u>  
 แสดงผลลัพธ์เป็นจำนวนวิธีการเลือกทั้งหมด เมื่อเลือกของ r ชิ้นจากที่มีทั้งหมด n ชิ้น
 
-## Example 1
-<pre class="output">
-_5_
-_3_
-10
-</pre>
-
-## Example 2
-<pre class="output">
-_5_
-_5_
-1
-</pre>
-
-## Example 3
-<pre class="output">
-_5_
-_0_
-1
-</pre>
-
 ::elab:begincode blank=True
 def fac(n):
     if n == 0 or n == 1:

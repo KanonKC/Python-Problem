@@ -8,37 +8,13 @@
 <u>ข้อมูลส่งออก</u>  
 แสดงผลลัพธ์เป็นจำนวนฟีโบนักชีลำดับที่ n (ตามลำดับที่ใส่เข้ามา)
 
-## Example 1
-<pre class="output">
-n: _1_
-1
-</pre>
-
-## Example 2
-<pre class="output">
-n: _2_
-1
-</pre>
-
-## Example 3
-<pre class="output">
-n: _20_
-6765
-</pre>
-
-## Example 4
-<pre class="output">
-n: _25_
-75025
-</pre>
-
 ::elab:begincode blank=True
 def fib(n):
     if n == 1 or n == 2:
         return 1
     return fib(n-1) + fib(n-2)
 
-n = int(input("n: "))
+n = int(input())
 
 print(fib(n))
 ::elab:endcode

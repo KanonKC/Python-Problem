@@ -12,29 +12,11 @@ Median(ค่ามัธยฐาน) คือค่ากลางของ�
 <u>ข้อมูลส่งออก</u>  
 แสดงค่ามัธยฐานของชุดข้อมูลนี้
 
-## Example 1
-<pre class="output">
-Enter 3 Numbers:
-\#1: _1_
-\#2: _2_
-\#3: _3_
-Median is 2
-</pre>
-
-## Example 2
-<pre class="output">
-Enter 3 Numbers:
-\#1: _6_
-\#2: _1_
-\#3: _5_
-Median is 5
-</pre>
-
 ::elab:begincode blank=True
 print("Enter 3 Numbers:")
-a = int(input("#1: "))
-b = int(input("#2: "))
-c = int(input("#3: "))
+a = int(input())
+b = int(input())
+c = int(input())
 
 if (a >= b and a <= c) or (a >= c and a <= b):
     print(f"Median is {a}")

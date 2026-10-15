@@ -10,26 +10,8 @@
 
 **คำใบ้:** อาจจะดูเหมือนว่าโจทย์ข้อนี้จำเป็นต้องใช้เรื่อง Loop เข้ามาช่วย แต่จริงๆเราสามารถใช้เพียง `if-else` ในการแก้ปัญหานี้ได้ โดยใช้ประโยชน์จากข้อมูลที่ว่า `1 ≤ n ≤ 100,000,000`
 
-## Example 1
-<pre class="output">
-n: _2_
-True
-</pre>
-
-## Example 2
-<pre class="output">
-n: _14_
-False
-</pre>
-
-## Example 3
-<pre class="output">
-n: _1024_
-True
-</pre>
-
 ::elab:begincode blank=True
-n = int(input("n: "))
+n = int(input())
 
 if 2**27 % n == 0:
     print(True)

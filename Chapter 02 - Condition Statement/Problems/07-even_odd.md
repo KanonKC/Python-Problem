@@ -8,24 +8,6 @@
 <u>ข้อมูลส่งออก</u>  
 คำว่า Hello World!
 
-## Example 1
-<pre class="output">
-_2_
-Even
-</pre>
-
-## Example 2
-<pre class="output">
-_3_
-Odd
-</pre>
-
-## Example 3
-<pre class="output">
-_2637_
-Odd
-</pre>
-
 ::elab:begincode blank=True
 n = int(input())
 

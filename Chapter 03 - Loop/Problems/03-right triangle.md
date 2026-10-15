@@ -14,18 +14,6 @@
 <u>ข้อมูลส่งออก</u>  
 มีบรรทัดเดียว แสดงความยาวของด้านตรงข้ามมุมฉากที่ยาวที่สุดตามข้อกำหนด
 
-## Example 1
-<pre class="output">
-_30_
-13
-</pre>
-
-## Example 2
-<pre class="output">
-_90_
-41
-</pre>
-
 ::elab:begincode blank=True
 from math import sqrt
 

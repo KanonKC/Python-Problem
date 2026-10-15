@@ -26,30 +26,10 @@ table,tr,td{
 <u>ข้อมูลส่งออก</u>  
 มีบรรทัดเดียวโดยแสดงจำนวนที่วัสดุแต่ละชนิดต้องใช้
 
-## Example 1
-<pre class="output">
-Amount of Chair: _3_
-Amount of Table: _1_
-Amount of Storage: _2_
-Stick x22
-Slab x10
-Log x9
-</pre>
-
-## Example 2
-<pre class="output">
-Amount of Chair: _5_
-Amount of Table: _0_
-Amount of Storage: _0_
-Stick x20
-Slab x5
-Log x0
-</pre>
-
 ::elab:begincode blank=True
-chair = int(input("Amount of Chair: "))
-table = int(input("Amount of Table: "))
-storage = int(input("Amount of Storage: "))
+chair = int(input())
+table = int(input())
+storage = int(input())
 
 stick = 4*chair + 6*table + 2*storage
 slab  =   chair + 3*table + 2*storage

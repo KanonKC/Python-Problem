@@ -9,19 +9,8 @@
 <u>ข้อมูลส่งออก</u>  
 แสดงข้อความนั้น โดยเรียงอักขระจากหลังมาหน้า
 
-## Example 1
-<pre class="output">
-Enter a word: _Hello World_
-dlroW olleH
-</pre>
-## Example 2
-<pre class="output">
-Enter a word: _daer ot siht esreveR_
-Reverse this to read
-</pre>
-
 ::elab:begincode blank=True
-text = input("Enter a word: ")
+text = input()
 print(text[::-1])
 ::elab:endcode
 

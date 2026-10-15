@@ -19,30 +19,6 @@
 <u>ข้อมูลส่งออก</u>  
 แสดงผลลัพธ์เป็นเลขฐานสองที่ได้จากการแปลง
 
-## Example 1
-<pre class="output">
-_0_
-0
-</pre>
-
-## Example 2
-<pre class="output">
-_3_
-11
-</pre>
-
-## Example 3
-<pre class="output">
-_8_
-1000
-</pre>
-
-## Example 4
-<pre class="output">
-_15_
-1111
-</pre>
-
 ::elab:begincode blank=True
 n = int(input())
 binary = ""

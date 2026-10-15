@@ -11,42 +11,9 @@
 <u>ข้อมูลส่งออก</u>  
 ข้อความ s ที่ถูกเขียนจากบนลงล่าง ตามด้วยซ้ายไปขวา
 
-## Example 1
-<pre class="output">
-Input text: _ABCDEFGHIJKLIMNOQRSTUVWXYZ_
-N: _4_
-AEIIQUY
-BFJMRVZ
-CGKNSW
-DHLOTX
-</pre>
-
-## Example 2
-<pre class="output">
-Input text: _ABCDEFGHIJKLIMNOQRSTUVWXYZ_
-N: _10_
-AKU
-BLV
-CIW
-DMX
-ENY
-FOZ
-GQ
-HR
-IS
-JT
-</pre>
-
-## Example 3
-<pre class="output">
-Input text: _ABCDEFGHIJKLIMNOQRSTUVWXYZ_
-N: _1_
-ABCDEFGHIJKLIMNOQRSTUVWXYZ
-</pre>
-
 ::elab:begincode blank=True
-text = input("Input text: ")
-col = int(input("N: "))
+text = input()
+col = int(input())
 
 result = ["" for i in range(col)]
 

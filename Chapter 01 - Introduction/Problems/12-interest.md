@@ -17,31 +17,11 @@
 <u>ข้อมูลส่งออก</u>
 แสดงเงินสุทธิ A
 
-Example #1
--------
-<pre class="output">
-Input principal amount (P): _10000_
-Input annual nominal interest rate (r): _0.08_
-Input # of times the interest is compounded per year (n): _12_
-Input # of years (t): _10_
-Final amount: 22196.40
-</pre>
-
-Example #2
--------
-<pre class="output">
-Input principal amount (P): _50000_
-Input annual nominal interest rate (r): _0.1_
-Input # of times the interest is compounded per year (n): _6_
-Input # of years (t): _2_
-Final amount: 60969.55
-</pre>
-
 ::elab:begincode blank=True
-p=float(input("Input principal amount (P): "))
-r=float(input("Input annual nominal interest rate (r): "))
-n=float(input("Input # of times the interest is compounded per year (n): "))
-t=float(input("Input # of years (t): "))
+p=float(input())
+r=float(input())
+n=float(input())
+t=float(input())
 a=p*((1+r/n)**(n*t))
 print(f'Final amount: {a:.2f}')
 ::elab:endcode

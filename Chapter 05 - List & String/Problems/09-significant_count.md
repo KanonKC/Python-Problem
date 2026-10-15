@@ -9,11 +9,6 @@
 <u>ข้อมูลส่งออก</u>  
 คำว่า Hello World!
 
-## Example 1
-<pre class="output">
-Hello World!
-</pre>
-
 ::elab:begincode blank=True
 print("Hello World!")
 ::elab:endcode

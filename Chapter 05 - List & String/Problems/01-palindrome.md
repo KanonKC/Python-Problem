@@ -10,26 +10,8 @@
 <u>ข้อมูลส่งออก</u>  
 แสดงผลลัพธ์ว่าข้อความที่รับมาเป็น Palindrome หรือไม่
 
-## Example 1
-<pre class="output">
-Enter a word: _racecar_
-racecar is a Palindrome
-</pre>
-
-## Example 2
-<pre class="output">
-Enter a word: _noon_
-noon is a Palindrome
-</pre>
-
-## Example 3
-<pre class="output">
-Enter a word: _hello_
-hello is not a Palindrome
-</pre>
-
 ::elab:begincode blank=True
-text = input("Enter a word: ")
+text = input()
 
 for i in range(len(text)//2):
     if text[i] != text[-i-1]:

@@ -9,16 +9,9 @@
 <u>ข้อมูลส่งออก</u>  
 แสดงข้อความแนะนำตัวเองออกมา ตามตัวอย่างด้านล่าง
 
-## Example 1
-<pre class="output">
-Enter your name: _Tom_
-Enter your age: _2005_
-Hello, My name is Tom. I am 17 year(s) old.
-</pre>
-
 ::elab:begincode blank=True
-name = input("Enter your name: ")
-birth = int(input("Enter your age: "))
+name = input()
+birth = int(input())
 
 print(f"Hello, My name is {name}. I am {2022-birth} year(s) old.")
 ::elab:endcode

@@ -10,30 +10,9 @@
 <u>ข้อมูลส่งออก</u>  
 แสดงคำตอบว่า ข้อความจากบรรทัดที่ 2 มีอยู่ในบรรทัดที่ 1 หรือไม่
 
-## Example 1
-<pre class="output">
-Enter some word in collection: _a b c d e_
-Enter a text to be checked: _b_
-'b' is in the collection.
-</pre>
-
-## Example 2
-<pre class="output">
-Enter some word in collection: _a b c d e_ 
-Enter a text to be checked: _f_
-'f' is not in the collection.
-</pre>
-
-## Example 3
-<pre class="output">
-Enter some word in collection: _Hello Word Text Book_
-Enter a text to be checked: _Mark_
-'Mark' is not in the collection.
-</pre>
-
 ::elab:begincode blank=True
-collection = input("Enter some word in collection: ").split()
-target = input("Enter a text to be checked: ")
+collection = input().split()
+target = input()
 
 if target in collection:
     print(f"'{target}' is in the collection.")
